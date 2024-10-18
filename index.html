@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aufgabe: Bargeldrückgabe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="credit">
+        <p>Made by: Marc-Oliver Körner</p>
+    </div>
+    <article><!--Kasten per Aufgabenbild-->
+        <h1>Bargeldrückgabe</h1>
+            <div class="z_betrag"><!--Textinput zahlender Betrag mit Label zur Beschreibung des Nummerinputs-->
+                <label for="zbetrag">Zu zahlender Betrag:</label><br>
+                <input type="number" id="zbetrag" name="zbetrag" placeholder="Verlangt"><!--Input mit Anweisung (placeholder)-->
+            </div>
+            <br><br>
+            <div class="ue_betrag"><!--Textinput übergebener Betrag mit Label zur Beschreibung des Nummerinputs-->
+                <label for="uebetrag">Übergebender Betrag:</label><br>
+                <input type="number" id="uebetrag" name="uebetrag" placeholder="Gegeben" min="0"><!--Input mit Anweisung, kein negativen Geldbetrag-->
+            </div>
+            <br>
+            <div class="output"><!--Ausgabe Bargeld mit Label für Ausgabe-->
+                <button onclick="Geld()">Berechnen</button><br><!--Zahlen werden übergeben-->
+                <p id="output">Hier sollte die Lösung hin</p>
+            </div>
+    </article>
+    </body>
+</html>
